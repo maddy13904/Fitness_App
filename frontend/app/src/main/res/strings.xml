@@ -1,0 +1,12 @@
+<resources>
+    <!-- Existing strings -->
+    <string name="app_name">Fitness Challenge</string>
+    <string name="fitnesschallenge">Fitness Challenge</string>
+    <string name="back">Back</string>
+    <string name="success_icon">Success Icon</string>
+    <string-array name="distance_units">
+        <item>KM</item>
+        <item>Miles</item>
+        <item>Steps</item>
+    </string-array>
+</resources>

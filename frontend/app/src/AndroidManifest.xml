@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/fitnesschallenge"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Fitnesschallenge">
+        <activity
+            android:name=".Account_deleted"
+            android:exported="false" />
+        <activity
+            android:name=".Delete_account"
+            android:exported="false" />
+        <activity
+            android:name=".Steps_challenge"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".Logout_confirmation"
+            android:exported="false" />
+        <activity
+            android:name=".Edit_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Friend_request_sent"
+            android:exported="false" />
+        <activity
+            android:name=".Alltime_leaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".monthly_leaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".Weekly_leaderboard"
+            android:exported="false" />
+        <activity
+            android:name=".User_notifications"
+            android:exported="false" />
+        <activity
+            android:name=".User_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Calories_burned"
+            android:exported="false" />
+        <activity
+            android:name=".Join_friends_challenge"
+            android:exported="false" />
+        <activity
+            android:name=".Available_challenges"
+            android:exported="false" />
+        <activity
+            android:name=".User_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Login"
+            android:exported="false" />
+        <activity
+            android:name=".Challenge_created"
+            android:exported="false" />
+        <activity
+            android:name=".Create_challenge"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_profile"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_dashboard"
+            android:exported="false" />
+        <activity
+            android:name=".Admin_signup"
+            android:exported="false" />
+        <activity
+            android:name=".user_signupActivity"
+            android:exported="false" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

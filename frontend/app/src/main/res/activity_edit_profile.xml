@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="20dp"
+    tools:context=".EditProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Toolbar -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/ic_back"
+                android:contentDescription="Back" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Edit Profile"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:textColor="#007AFF"
+                android:textStyle="bold"
+                android:textSize="16sp" />
+        </LinearLayout>
+
+        <!-- Profile Photo -->
+        <RelativeLayout
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_marginTop="10dp">
+
+            <ImageView
+                android:id="@+id/iv_profile_photo"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:src="@drawable/profile_placeholder"
+                android:scaleType="centerCrop"
+                android:background="@drawable/bg_round_image" />
+
+            <ImageView
+                android:id="@+id/iv_camera"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_camera"
+                android:background="@drawable/bg_camera"
+                android:padding="6dp"
+                android:contentDescription="Change Photo" />
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Change Photo"
+            android:textColor="#007AFF"
+            android:layout_marginTop="8dp"
+            android:textStyle="bold"
+            android:textSize="14sp" />
+
+        <!-- Full Name -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Full Name"
+            android:layout_marginTop="20dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_full_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Full Name"
+            android:text="Sarah Johnson"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Username -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Username"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_username"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Username"
+            android:text="sarahfit"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Email -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Email"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email"
+            android:text="sarah.johnson@example.com"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:inputType="textEmailAddress" />
+
+        <!-- Phone Number -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Phone Number"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Phone Number"
+            android:text="+1 (555) 123-4567"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:textColor="#000"
+            android:inputType="phone" />
+
+        <!-- Fitness Details -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Details"
+            android:layout_marginTop="24dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="8dp"
+            android:weightSum="2">
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Full Name"
+                android:background="@drawable/bg_edittext"
+                android:padding="10dp"
+                android:textColor="#000"
+                android:textSize="14sp"
+                android:singleLine="true" />
+
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="wrap_content" />
+
+            <EditText
+                android:id="@+id/et_weight"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Weight"
+                android:text="135 lbs"
+                android:background="@drawable/bg_edittext"
+                android:padding="10dp"
+                android:textColor="#000" />
+        </LinearLayout>
+
+        <!-- Fitness Level -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fitness Level"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_fitness_level"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Fitness Level"
+            android:text="Intermediate"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Weekly Goal -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weekly Goal"
+            android:layout_marginTop="16dp"
+            android:textColor="#000"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/et_weekly_goal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Weekly Goal"
+            android:text="4 workouts per week"
+            android:background="@drawable/bg_edittext"
+            android:padding="10dp"
+            android:textColor="#000" />
+
+        <!-- Privacy -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Privacy"
+            android:layout_marginTop="24dp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Switch Options -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="12dp">
+
+            <Switch
+                android:id="@+id/switch_profile_visibility"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Profile Visibility"
+                android:checked="true" />
+
+            <Switch
+                android:id="@+id/switch_activity_status"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Show Activity Status"
+                android:checked="true" />
+
+            <Switch
+                android:id="@+id/switch_friend_requests"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Allow Friend Requests"
+                android:checked="true" />
+
+            <Switch
+                android:id="@+id/switch_workout_stats"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Share Workout Stats"
+                android:checked="false" />
+        </LinearLayout>
+
+        <!-- Delete Account -->
+        <TextView
+            android:id="@+id/btn_delete_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Account"
+            android:textColor="#FF3B30"
+            android:textStyle="bold"
+            android:layout_marginTop="24dp"
+            android:textSize="16sp" />
+
+        <!-- Log Out -->
+        <TextView
+            android:id="@+id/btn_log_out"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="#666"
+            android:layout_marginTop="12dp"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

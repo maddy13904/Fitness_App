@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="20dp"
+    tools:context=".DeleteAccountActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Toolbar -->
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:src="@drawable/ic_back"
+            android:layout_gravity="start"
+            android:layout_marginBottom="20dp"
+            android:contentDescription="Back" />
+
+        <!-- Warning Icon -->
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_warning_red"
+            android:layout_marginTop="10dp"
+            android:contentDescription="Warning Icon" />
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete Your Account?"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="This action cannot be undone. Your account and all associated data will be permanently deleted, including:"
+            android:textColor="#555555"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+        <!-- Bullet Points -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• All fitness challenges and progress\n• Friend connections and social data\n• Achievement history and badges\n• Personal workout records\n• Profile information and settings"
+            android:textColor="#555555"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp" />
+
+        <!-- Note -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F7F7F7"
+            android:padding="10dp"
+            android:text="Note: If you have an active subscription, please cancel it before deleting your account."
+            android:textColor="#666666"
+            android:textSize="13sp"
+            android:layout_marginTop="20dp"
+            android:backgroundTintMode="src_in"
+            android:backgroundTint="#F1F1F1" />
+
+        <!-- Enter Password -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Enter your password to confirm"
+            android:textColor="#000000"
+            android:textSize="14sp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="4dp" />
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter password"
+            android:padding="12dp"
+            android:background="@drawable/bg_edittext"
+            android:inputType="textPassword"
+            android:textColor="#000000"
+            android:textSize="14sp" />
+
+        <!-- Delete Account Button -->
+        <TextView
+            android:id="@+id/btn_delete_account"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_delete"
+            android:text="Delete Account"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="20dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Cancel -->
+        <TextView
+            android:id="@+id/btn_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textColor="#007AFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Support Link -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need help? Contact Support"
+            android:textColor="#007AFF"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>

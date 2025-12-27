@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:padding="24dp"
+    tools:context=".AccountDeletedActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal">
+
+        <!-- Warning Icon -->
+        <ImageView
+            android:id="@+id/iv_warning"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/ic_warning_red"
+            android:layout_marginTop="30dp"
+            android:contentDescription="Warning Icon" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Account Successfully Deleted"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:layout_marginTop="24dp" />
+
+        <!-- Subtitle -->
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Your account and all associated data have been permanently deleted from Fitness Friends."
+            android:textColor="#777777"
+            android:textAlignment="center"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp" />
+
+        <!-- Info Box -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_info_box"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="You will no longer have access to:"
+                android:textStyle="bold"
+                android:textColor="#444444"
+                android:textSize="14sp"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="• Your fitness challenge history\n• Friend connections and teams\n• Achievement badges and records\n• Personal workout statistics\n• Custom workout plans"
+                android:textColor="#555555"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+        <!-- Return to Start Button -->
+        <TextView
+            android:id="@+id/btn_return_start"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_blue_button"
+            android:text="Return to Start"
+            android:gravity="center"
+            android:paddingVertical="12dp"
+            android:layout_marginTop="24dp"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp" />
+
+        <!-- Create New Account -->
+        <TextView
+            android:id="@+id/btn_create_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create New Account"
+            android:textColor="#007AFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginTop="16dp" />
+
+        <!-- Support Link -->
+        <TextView
+            android:id="@+id/tv_support"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Need help? Contact Support"
+            android:textColor="#777777"
+            android:textSize="14sp"
+            android:layout_marginTop="12dp" />
+    </LinearLayout>
+</ScrollView>

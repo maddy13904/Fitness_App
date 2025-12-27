@@ -1,0 +1,5 @@
+{
+  "inviter_id": "3",
+  "invitee_id": "1",
+  "challenge_id": "2"
+}
